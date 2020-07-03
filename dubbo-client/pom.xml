@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.od.dubbotest</groupId>
+	<groupId>com.xue.dubbotest</groupId>
 	<artifactId>dubbo-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -20,13 +20,13 @@
 	<properties>
 		<java.version>1.7</java.version>
 		<spring.version>4.2.4.RELEASE</spring.version>
-		<start-class>com.od.dubbotest.Application</start-class>
+		<start-class>com.xue.dubbotest.Application</start-class>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.od.dubbotest</groupId>
+			<groupId>com.xue.dubbotest</groupId>
 			<artifactId>dubbo-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
@@ -107,13 +107,18 @@
 			<version>4.11</version>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.ctrip.framework.apollo</groupId>
+			<artifactId>apollo-client</artifactId>
+			<version>1.1.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
 		<finalName>dubbo-client</finalName>
 		<resources>
 			<resource>
-				<directory>src/main/java</directory>
+				<directory>src/main/resources</directory>
 				<includes>
 					<include>**/*</include>
 				</includes>
@@ -169,3 +174,4 @@
 		</pluginRepository>
 	</pluginRepositories>
 </project>
+
